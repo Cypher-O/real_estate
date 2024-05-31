@@ -1,16 +1,24 @@
-# real_estate
+# Real Estate App
 
 The Real Estate Flutter App is a powerful mobile application tailored to simplify the real estate buying and selling process while integrating live location tracking on maps. Developed using Flutter, this app provides a unified, cross-platform solution with an elegant and intuitive interface, catering to the needs of real estate enthusiasts and professionals alike.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+## Tools used in building
 
-A few resources to get you started if this is your first Flutter project:
+- flutter `v3.19.5 - mobile sdk`
+- hooks_riverpod `state management`
+- flutter_hooks `internal state`
+- iconsax `icon pack`
+- animations `flutter animations package`
+- flutter_animate `gskinner animations package`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## App screenshots
+<table>
+  <tr>
+    <td><img src="./assets/homescreen.png" alt="HomeScreen 1" width="250"></td>
+    <td><img src="./assets/homescreen2.png" alt="HomeScreen 2" width="250"></td>
+    <td><img src="./assets/searchscreen.png" alt="SearchScreen 3" width="250"></td>
+    <td><img src="./assets/searchscreen2.png" alt="SearchScreen 4" width="250"></td>
+  </tr>
+</table>
