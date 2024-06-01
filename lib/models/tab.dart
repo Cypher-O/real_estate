@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:real_estate/utils/constants/enums.dart';
+import 'package:real_estate/utils/imports/generalImports.dart';
 
 class TabModel {
   TabModel({

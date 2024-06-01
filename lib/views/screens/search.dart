@@ -37,7 +37,7 @@ class SearchScreen extends HookWidget {
                       ),
                       S(w: 8),
                       const GeneralTextDisplay(
-                        'Saint Petersburg',
+                        location,
                         15,
                         textColor: primaryBlack,
                         noOfTextLine: 1,
@@ -77,275 +77,53 @@ class SearchScreen extends HookWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Positioned(
+          animatedPositionedContainer(
+            context,
             top: 100,
             right: 50,
-            child: HookBuilder(
-              builder: (context) {
-                return AnimatedContainer(
-                  width: containerWidth,
-                  height: 50,
-                  duration: 600.ms,
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
-                  decoration: const BoxDecoration(
-                    color: primaryOrange,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(15),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: isToggled.value
-                        ? const GeneralTextDisplay(
-                            r'13,3 mn $',
-                            15,
-                            textColor: white,
-                            noOfTextLine: 1,
-                            textFontWeight: FontWeight.w400,
-                          )
-                        : const Icon(
-                            Iconsax.empty_wallet,
-                            size: 18,
-                            color: white,
-                          ),
-                  ),
-                )
-                    .animate(
-                      delay: 0.3.seconds,
-                    )
-                    .fadeIn(curve: Curves.easeOut)
-                    .slideX(
-                      begin: -0.5,
-                      duration: 600.ms,
-                    );
-              },
-            ),
+            text: firstMapMarker,
+            isToggled: isToggled,
+            containerWidth: containerWidth,
           ),
-          Positioned(
+          animatedPositionedContainer(
+            context,
             top: 300,
             left: 50,
-            child: HookBuilder(
-              builder: (context) {
-                return AnimatedContainer(
-                  width: containerWidth,
-                  height: 50,
-                  duration: 600.ms,
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
-                  decoration: const BoxDecoration(
-                    color: primaryOrange,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(15),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: isToggled.value
-                        ? const GeneralTextDisplay(
-                            r'13,3 mn $',
-                            15,
-                            textColor: white,
-                            noOfTextLine: 1,
-                            textFontWeight: FontWeight.w400,
-                          )
-                        : const Icon(
-                            Iconsax.empty_wallet,
-                            size: 18,
-                            color: white,
-                          ),
-                  ),
-                )
-                    .animate(
-                      delay: 0.3.seconds,
-                    )
-                    .fadeIn(curve: Curves.easeOut)
-                    .slideX(
-                      begin: -0.5,
-                      duration: 600.ms,
-                    );
-              },
-            ),
+            text: fourthMapMarker,
+            isToggled: isToggled,
+            containerWidth: containerWidth,
           ),
-          Positioned(
+          animatedPositionedContainer(
+            context,
             top: 170,
             left: 100,
-            child: HookBuilder(
-              builder: (context) {
-                return AnimatedContainer(
-                  width: containerWidth,
-                  height: 50,
-                  duration: 600.ms,
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
-                  decoration: const BoxDecoration(
-                    color: primaryOrange,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(15),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: isToggled.value
-                        ? const GeneralTextDisplay(
-                            r'13,3 mn $',
-                            15,
-                            textColor: white,
-                            noOfTextLine: 1,
-                            textFontWeight: FontWeight.w400,
-                          )
-                        : const Icon(
-                            Iconsax.empty_wallet,
-                            size: 18,
-                            color: white,
-                          ),
-                  ),
-                )
-                    .animate(
-                      delay: 0.3.seconds,
-                    )
-                    .fadeIn(curve: Curves.easeOut)
-                    .slideX(
-                      begin: -0.5,
-                      duration: 600.ms,
-                    );
-              },
-            ),
+            text: secondMapMarker,
+            isToggled: isToggled,
+            containerWidth: containerWidth,
           ),
-          Positioned(
+          animatedPositionedContainer(
+            context,
             top: 240,
             right: 20,
-            child: HookBuilder(
-              builder: (context) {
-                return AnimatedContainer(
-                  width: containerWidth,
-                  height: 50,
-                  duration: 600.ms,
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
-                  decoration: const BoxDecoration(
-                    color: primaryOrange,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(15),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: isToggled.value
-                        ? const GeneralTextDisplay(
-                            r'13,3 mn $',
-                            15,
-                            textColor: white,
-                            noOfTextLine: 1,
-                            textFontWeight: FontWeight.w400,
-                          )
-                        : const Icon(
-                            Iconsax.empty_wallet,
-                            size: 18,
-                            color: white,
-                          ),
-                  ),
-                )
-                    .animate(
-                      delay: 0.3.seconds,
-                    )
-                    .fadeIn(curve: Curves.easeOut)
-                    .slideX(
-                      begin: -0.5,
-                      duration: 600.ms,
-                    );
-              },
-            ),
+            text: thirdMapMarker,
+            isToggled: isToggled,
+            containerWidth: containerWidth,
           ),
-          Positioned(
+          animatedPositionedContainer(
+            context,
             top: 340,
             right: 70,
-            child: HookBuilder(
-              builder: (context) {
-                return AnimatedContainer(
-                  width: containerWidth,
-                  height: 50,
-                  duration: 600.ms,
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
-                  decoration: const BoxDecoration(
-                    color: primaryOrange,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(15),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: isToggled.value
-                        ? const GeneralTextDisplay(
-                            r'13,3 mn $',
-                            15,
-                            textColor: white,
-                            noOfTextLine: 1,
-                            textFontWeight: FontWeight.w400,
-                          )
-                        : const Icon(
-                            Iconsax.empty_wallet,
-                            size: 18,
-                            color: white,
-                          ),
-                  ),
-                )
-                    .animate(
-                      delay: 0.3.seconds,
-                    )
-                    .fadeIn(curve: Curves.easeOut)
-                    .slideX(
-                      begin: -0.5,
-                      duration: 600.ms,
-                    );
-              },
-            ),
+            text: fifthMapMarker,
+            isToggled: isToggled,
+            containerWidth: containerWidth,
           ),
-          Positioned(
+          animatedPositionedContainer(
+            context,
             top: 440,
             left: 65,
-            child: HookBuilder(
-              builder: (context) {
-                return AnimatedContainer(
-                  width: containerWidth,
-                  height: 50,
-                  duration: 600.ms,
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
-                  decoration: const BoxDecoration(
-                    color: primaryOrange,
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(15),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: isToggled.value
-                        ? const GeneralTextDisplay(
-                            r'13,3 mn $',
-                            15,
-                            textColor: white,
-                            noOfTextLine: 1,
-                            textFontWeight: FontWeight.w400,
-                          )
-                        : const Icon(
-                            Iconsax.empty_wallet,
-                            size: 18,
-                            color: white,
-                          ),
-                  ),
-                )
-                    .animate(
-                      delay: 0.3.seconds,
-                    )
-                    .fadeIn(curve: Curves.easeOut)
-                    .slideX(
-                      begin: -0.5,
-                      duration: 600.ms,
-                    );
-              },
-            ),
+            text: sixthMapMarker,
+            isToggled: isToggled,
+            containerWidth: containerWidth,
           ),
         ],
       ),
@@ -375,105 +153,41 @@ class SearchScreen extends HookWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              InkWell(
-                                onTap: () {
-                                  isToggled.value = !isToggled.value;
-                                  isModalOpen.value = !isModalOpen.value;
-                                },
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Iconsax.shield_tick,
-                                      size: 18,
-                                      color: primaryBlack.withOpacity(.45),
-                                    ),
-                                    S(w: 6),
-                                    GeneralTextDisplay(
-                                      'Cosy areas',
-                                      15,
-                                      textColor: primaryBlack.withOpacity(.45),
-                                      noOfTextLine: 1,
-                                      textFontWeight: FontWeight.w400,
-                                      letterSpacing: -0.6,
-                                    ),
-                                  ],
-                                ),
+                              buildInkWellRow(
+                                context,
+                                Iconsax.shield_tick,
+                                cosy,
+                                primaryBlack.withOpacity(.45),
+                                isToggled,
+                                isModalOpen,
                               ),
                               S(h: 15),
-                              InkWell(
-                                onTap: () {
-                                  isToggled.value = !isToggled.value;
-                                  isModalOpen.value = !isModalOpen.value;
-                                },
-                                child: Row(
-                                  children: [
-                                    const Icon(
-                                      Iconsax.empty_wallet,
-                                      size: 18,
-                                      color: primaryOrange,
-                                    ),
-                                    S(w: 6),
-                                    const Text(
-                                      'Price',
-                                      style: TextStyle(
-                                        color: primaryOrange,
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w400,
-                                        letterSpacing: -0.6,
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                              buildInkWellRow(
+                                context,
+                                Iconsax.empty_wallet,
+                                price,
+                                primaryOrange,
+                                isToggled,
+                                isModalOpen,
+                                iconColor: primaryOrange,
                               ),
                               S(h: 15),
-                              InkWell(
-                                onTap: () {
-                                  isToggled.value = !isToggled.value;
-                                  isModalOpen.value = !isModalOpen.value;
-                                },
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Iconsax.bag,
-                                      size: 18,
-                                      color: primaryBlack.withOpacity(.45),
-                                    ),
-                                    S(w: 6),
-                                    GeneralTextDisplay(
-                                      'Infastructure',
-                                      15,
-                                      textColor: primaryBlack.withOpacity(.45),
-                                      noOfTextLine: 1,
-                                      textFontWeight: FontWeight.w400,
-                                      letterSpacing: -0.6,
-                                    ),
-                                  ],
-                                ),
+                              buildInkWellRow(
+                                context,
+                                Iconsax.bag,
+                                infrastructure,
+                                primaryBlack.withOpacity(.45),
+                                isToggled,
+                                isModalOpen,
                               ),
                               S(h: 15),
-                              InkWell(
-                                onTap: () {
-                                  isToggled.value = !isToggled.value;
-                                  isModalOpen.value = !isModalOpen.value;
-                                },
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Iconsax.layer,
-                                      size: 18,
-                                      color: primaryBlack.withOpacity(.45),
-                                    ),
-                                    S(w: 6),
-                                    GeneralTextDisplay(
-                                      'Without any layer',
-                                      15,
-                                      textColor: primaryBlack.withOpacity(.45),
-                                      noOfTextLine: 15,
-                                      textFontWeight: FontWeight.w400,
-                                      letterSpacing: -0.6,
-                                    ),
-                                  ],
-                                ),
+                              buildInkWellRow(
+                                context,
+                                Iconsax.layer,
+                                withoutLayer,
+                                primaryBlack.withOpacity(.45),
+                                isToggled,
+                                isModalOpen,
                               ),
                             ],
                           ),
@@ -561,7 +275,7 @@ class SearchScreen extends HookWidget {
                       ),
                       S(w: 5),
                       const GeneralTextDisplay(
-                        'List of variants',
+                        variants,
                         15,
                         textColor: white,
                         noOfTextLine: 1,
