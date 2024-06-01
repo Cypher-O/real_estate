@@ -14,9 +14,21 @@ The Real Estate Flutter App is a powerful mobile application tailored to simplif
 ## App screenshots
 <table>
   <tr>
-    <td><img src="./assets/homescreen.png" alt="HomeScreen 1" width="250"></td>
-    <td><img src="./assets/homescreen2.png" alt="HomeScreen 2" width="250"></td>
-    <td><img src="./assets/searchscreen.png" alt="SearchScreen 3" width="250"></td>
-    <td><img src="./assets/searchscreen2.png" alt="SearchScreen 4" width="250"></td>
+    <td align="center">
+      <img src="./assets/homescreen.png" alt="HomeScreen 1" width="250">
+      <div>HomeScreen 1</div>
+    </td>
+    <td align="center">
+      <img src="./assets/homescreen2.png" alt="HomeScreen 2" width="250">
+      <div>HomeScreen 2</div>
+    </td>
+    <td align="center">
+      <img src="./assets/searchscreen.png" alt="SearchScreen 3" width="250">
+      <div>SearchScreen 1</div>
+    </td>
+    <td align="center">
+      <img src="./assets/searchscreen2.png" alt="SearchScreen 4" width="250">
+      <div>SearchScreen 2</div>
+    </td>
   </tr>
 </table>
